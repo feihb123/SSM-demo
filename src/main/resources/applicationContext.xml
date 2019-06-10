@@ -87,14 +87,13 @@
     </util:list>
 
     <!--配置注解 扫描组件-->
-    <!--<context:annotation-config>
+    <!--<context:annotation-config/>
     是用于激活那些已经在spring容器里注册过的bean上面的注解。
     （无论是通过xml的方式还是通过package sanning的方式）
 
     <context:component-scan>除了具有<context:annotation-config>的功能之外，
     <context:component-scan>还可以在指定的package下扫描以及注册javabean 。-->
 
-    <!--<context:annotation-config/>-->
     <context:component-scan base-package="spring.entity" />
 
 

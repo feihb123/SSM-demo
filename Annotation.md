@@ -17,16 +17,15 @@
 　　(3). 如果指定了type，则从上下文中找到类型匹配的唯一bean进行装配，找不到或者找到多个，都会抛出异常
 　　(4). 如果既没有指定name，又没有指定type，则自动按照byName方式进行装配；如果没有匹配，则回退为一个原始类型进行匹配，如果匹配则自动装配
 3. **@Autowired和@Resource区别**
-    - @Autowired默认按照byType方式进行bean匹配，@Resource默认按照byName方式进行bean匹配
-    - @Autowired是Spring的注解，@Resource是J2EE的注解，看包名即可发现
+    - 用于定义配置类，可替换xml配置文件，被注解的类内部包含有一个或多个被@Bean注解的方法，这些方法将会被AnnotationConfigApplicationContext或AnnotationConfigWebApplicationContext类进行扫描，并用于构建bean定义，初始化Spring容器。
 
-4. **@Qualifier**
+4. **@Configuration**
     - 如果容器中有一个以上匹配的Bean，则可以通过@Qualifier注解限定Bean的名称
     - 用法：直接在@Autowired下方@Qualifier("bean")
 5. **@Component**
     - 把普通pojo实例化到spring容器中，相当于配置文件中的
 ```xml
-    <bean id="" class=""/>
+       <bean id="" class=""/>
 ```
 6. **@Controller**
     - 在控制层使用（controller层）
@@ -41,33 +40,54 @@
     - 例如Bean实例化为bean，自定义名字名字:@Service("name")
 9. **@Repository** 
     - 在数据访问层使用（dao层）
+    - @Repository用于标注数据访问组件，即DAO组件
+10. **@Mapper** 
+    - 代替Mybatis的mapper映射文件
+    - 把mapper这个DAO交給Spring管理
+    - 自动根据一个添加@Mapper注解的接口生成一个实现类 
 
+
+11. **@Scope**
+    - 值有:singleton,prototype,request,session,globalSession
+    - request，session和global session类型只适用于web程序
+    - singleton：表明容器中创建时只存在一个实例，所有引用此bean都是单一实例（即单例模式）。
+    - prototype：spring容器在进行输出prototype的bean对象时，会每次都重新生成一个新的对象给请求方（即原型模式）。
+    - request：spring容器中XmlWebApplicationContext会为每个HTTP请求创建一个全新的RequestPrecessor对象，当请求结束后，该对象的生命周期即告结束。
+    - session：Spring容器会为每个独立的session创建属于自己的全新的。UserPreferences实例，比request scope的bean会存活更长的时间。
+    - globalSession：global session只有应用在基于porlet的web应用程序中才有意义，它映射到porlet的global范围的session，如果普通的servlet的web 应用中使用了这个scope，容器会把它作为普通的session的scope对待。
  
+12. **@PostConstruct**
+    - 相当于init-method,使用在方法上，当Bean初始化时执行。
 
+13. **@PreDestroy**
+    - 相当于destory-method，使用在方法上，当Bean销毁时执行。
 
-@Scope("prototype")
+14. **@Lazy**
+    - 表示懒加载，即延迟初始化
 
-值有:singleton,prototype,session,request,session,globalSession
+15. **@Qualifier**
+    - 如果容器中有一个以上匹配的Bean，则可以通过@Qualifier注解限定Bean的名称
+    - 用法：直接在@Autowired下方@Qualifier("bean")
 
- 
+16. **@Primary**
+    - 作用与@Qualifier类似
+    - 如果容器中有一个以上匹配的Bean，则注入@Primary注解的类
 
-@PostConstruct 
+17. **@Async**
+    - 基于@Async标注的方法，称之为异步方法
+    - 这些方法将在执行的时候，将会在独立的线程中被执行，调用者无需等待它的完成，即可继续其他的操作。
 
-相当于init-method,使用在方法上，当Bean初始化时执行。
+### 注解applicationContext配置：
+1.使用annotation-config
+```xml
+    <context:annotation-config/>
+```
+- 是用于激活那些已经在spring容器里注册过的bean上面的注解。
+- (无论是通过xml的方式还是通过package sanning的方式)
 
- 
-
-@PreDestroy 
-
-相当于destory-method，使用在方法上，当Bean销毁时执行。
-
-
-    <!--配置注解 扫描组件-->
-    <!--<context:annotation-config>
-    是用于激活那些已经在spring容器里注册过的bean上面的注解。
-    （无论是通过xml的方式还是通过package sanning的方式）
-
-    <context:component-scan>除了具有<context:annotation-config>的功能之外，
-    <context:component-scan>还可以在指定的package下扫描以及注册javabean 。-->
-
-    <!--<context:annotation-config/>-->
+2.使用component-scan
+```xml
+<context:component-scan base-package="" />
+```
+- component-scan除了具有annotation-config的功能之外，
+- component-scan还可以在指定的package下扫描以及注册javabean 
