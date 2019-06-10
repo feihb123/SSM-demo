@@ -90,4 +90,4 @@
 <context:component-scan base-package="" />
 ```
 - component-scan除了具有annotation-config的功能之外，
-- component-scan还可以在指定的package下扫描以及注册javabean 
+- component-scan还可以在指定的package下扫描以及注册javabean。
