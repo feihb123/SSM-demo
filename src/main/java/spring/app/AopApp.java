@@ -2,20 +2,20 @@ package spring.app;
 
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
+import spring.service.CommonService;
 
 import java.util.Calendar;
 
 /**
- * 抽象对象实例创建
+ * xml配置AOP
  * @author datacharm.cn
  */
-public class AbstractApp {
+public class AopApp {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext ac =new ClassPathXmlApplicationContext("applicationContext.xml");
-        //抽象方法需要加 factory-method="getInstance"
-        Calendar calendar = (Calendar)ac.getBean("calendar");
+        ConfigurableApplicationContext ac =new ClassPathXmlApplicationContext("aopApplicationContext.xml");
+        CommonService commonService = ac.getBean("commonService", CommonService.class);
+        commonService.function();
 
     }
 }

@@ -1,4 +1,4 @@
-package spring.ascpect;
+package spring.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.slf4j.Logger;

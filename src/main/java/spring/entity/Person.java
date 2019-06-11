@@ -7,9 +7,14 @@ import java.io.Serializable;
  */
 public class Person implements Serializable {
     private Tool tool;
-    private String name;
+    private String name ;
 
     public Person() {
+    }
+
+    public Person(Tool tool, String name) {
+        this.tool = tool;
+        this.name = name;
     }
 
     public Person(String name) {

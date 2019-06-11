@@ -1,20 +1,20 @@
 package spring.app;
 
+
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import spring.entity.SourceBean;
-import spring.entity.TargetBean;
+import spring.entity.Person;
+import spring.entity.Tool;
+
 
 /**
  * @author datacharm.cn
  */
-public class TransmitApp {
+
+public class AutowiredApp {
     public static void main(String[] args) {
-        AbstractApplicationContext ac = new ClassPathXmlApplicationContext("dataApplicationContext.xml");
-        SourceBean source = ac.getBean("source", SourceBean.class);
-        System.out.println(source.toString());
-        TargetBean targetBean = ac.getBean("target",TargetBean.class);
-        System.out.println(targetBean.toString());
-        ac.close();
+        AbstractApplicationContext ac = new ClassPathXmlApplicationContext("autowiredApplicationContext.xml");
+        Person person = ac.getBean("person", Person.class);
+        System.out.println(person.getTool().getName());
     }
 }
