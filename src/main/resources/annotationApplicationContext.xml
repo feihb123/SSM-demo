@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    <!--希望被装配的tool-->
+    <bean id="tool" class="spring.entity.Tool">
+        <property name="name" value="Tool!"></property>
+    </bean>
+    <!--希望被装配的tool2-->
+    <bean id="tool2" class="spring.entity.Tool">
+        <property name="name" value="Tool2!"></property>
+    </bean>
+    <!--原来的bean写法 假如属性多，比较麻烦-->
+    <!--<bean id="person" class="spring.entity.Person">
+        <property name="tool" ref="tool"></property>
+    </bean>-->
+
+    <!--即默认不自动装配default-->
+    <!--<bean id="person" class="spring.entity.Person" autowire="no"></bean>-->
+
+    <!--按类型自动装配 Person （有且仅有一个Person类型的bean） -->
+    <!--相当于默认注解 @Autowired-->
+    <!--<bean id="person" class="spring.entity.Person" autowire="byType"></bean>-->
+
+    <!--相当于@Autowired和@@Qualifier一起使用-->
+    <!--默认name 为 首字母小写的类-->
+    <bean id="person" class="spring.entity.Person" autowire="byName"></bean>
+
+
+</beans>
