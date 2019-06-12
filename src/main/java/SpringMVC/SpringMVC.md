@@ -5,7 +5,7 @@
 1. HandlerMapping（映射器处理器）
 >HandlerMapping负责根据用户请求找到Handler即处理器，springmvc提供了不同的映射器实现不同的映射方式，例如：配置文件方式，实现接口方式，注解方式等。
 
-1. HandlAdapter (处理器适配器)
+1. HandlerAdapter (处理器适配器)
 >通过HandlerAdapter对处理器进行执行，这是适配器模式的应用，通过扩展适配器可以对更多类型的处理器进行执行。
 
 1. Handler（Controller）后端处理器

@@ -11,7 +11,7 @@
 
 #### spring dao依赖（jdbc相关）
 - spring-jdbc
->这个jar文件包含对Spring对JDBC数据访问进行封装的所有类。
+>这个jar文件包含对Spring对JDBC数据访问进行封装的所有类。用来配合不同数据库的连接支持。
 
 - spring-tx
 >spring-tx是基于aop的，实现声明式事务支持，使用该方式后最大的获益是简单，事务管理不再是令人痛苦的，而且此方式属于无侵入式，对业务逻辑实现无影响。
