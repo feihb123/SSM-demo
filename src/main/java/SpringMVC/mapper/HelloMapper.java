@@ -1,9 +1,8 @@
-package mybatis.mapper;
+package SpringMVC.mapper;
 
-import jdk.nashorn.internal.objects.annotations.Setter;
-import mybatis.entity.ManageSystem;
-import mybatis.entity.Platform;
-import mybatis.entity.User;
+import SpringMVC.entity.ManageSystem;
+import SpringMVC.entity.Platform;
+import SpringMVC.entity.User;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 

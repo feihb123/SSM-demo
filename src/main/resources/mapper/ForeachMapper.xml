@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.mapper.ForeachMapper">
+    <!--
+    你可以将任何可迭代对象（如 List、Set 等）
+    Map 对象或者数组对象传递给 foreach 作为集合参数。
+    -->
+    <select id="getUsersInList" resultType="User">
+        select * from user where 1 = 1
+        <if test="list.size() > 0">
+            and pid in
+            <!-- foreach 为-->
+            <foreach item="item" collection="list" index="index"
+                     open="(" separator="," close=")">
+                #{item}
+            </foreach>
+        </if>
+    </select>
+
+</mapper>

@@ -1,5 +1,7 @@
-import mybatis.entity.User;
-import mybatis.mapper.HelloMapper;
+import SpringMVC.entity.User;
+import SpringMVC.mapper.HelloMapper;
+import SpringMVC.mapper.IfMapper;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -10,17 +12,19 @@ import java.util.List;
 /**
  * @author datacharm.cn
  */
-
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations={"file:web/WEB-INF/springMVCApplicationContext.xml"})
-public class MybatisTest {
+@ContextConfiguration(locations={"file:web/WEB-INF/applicationContext.xml"})
+public class SpringMVCTest {
+
     @Autowired
     HelloMapper helloMapper;
 
+    @Test
     public void getUsers(){
+
         List<User> users = helloMapper.getUsers();
         for (User user : users) {
-            user.getUname();
+            System.out.println(user.getUname());
         }
     }
 }
