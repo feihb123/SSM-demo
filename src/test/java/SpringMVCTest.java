@@ -1,6 +1,7 @@
 import SpringMVC.entity.User;
 import SpringMVC.mapper.HelloMapper;
 import SpringMVC.mapper.IfMapper;
+import SpringMVC.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,8 @@ public class SpringMVCTest {
 
     @Autowired
     HelloMapper helloMapper;
+    @Autowired
+    UserService userService;
 
     @Test
     public void getUsers(){
@@ -26,5 +29,11 @@ public class SpringMVCTest {
         for (User user : users) {
             System.out.println(user.getUname());
         }
+    }
+
+    @Test
+    public void TransactionTest(){
+        //测试出现异常回滚数据
+        userService.transactionTest();
     }
 }

@@ -11,6 +11,7 @@
 
 
     <!--自动代理aop-->
+    <!--自动为spring容器中那些配置@aspect切面的bean创建代理，织入切面-->
     <aop:aspectj-autoproxy  />
 
 </beans>

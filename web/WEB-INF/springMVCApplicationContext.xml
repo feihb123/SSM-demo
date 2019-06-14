@@ -11,7 +11,7 @@
     <mvc:annotation-driven/>
 
 
-    <!--若使用RequestMapping的不需要配置HandleMapping-->
+    <!--若使用RequestMapping不需要配置HandleMapping-->
 
     <!--配置HandlerAdapter-->
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
@@ -21,6 +21,7 @@
         <property name="prefix" value="/WEB-INF/page/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-
+    <!--开启默认servlet handler使其不拦截静态资源-->
+    <mvc:default-servlet-handler/>
 
 </beans>

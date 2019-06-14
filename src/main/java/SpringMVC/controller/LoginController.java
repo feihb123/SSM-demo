@@ -24,6 +24,14 @@ public class LoginController {
         }
         return "user_login_form";
     }
+
+    @RequestMapping("/test")
+    public String test(){
+        System.out.println("test!");
+        return "test";
+    }
+
+
     
 
 }

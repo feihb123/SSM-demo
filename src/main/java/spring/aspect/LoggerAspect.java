@@ -11,11 +11,9 @@ public class LoggerAspect {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoggerAspect.class);
 
     public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
-        System.out.println("start log:" + joinPoint.getSignature().getName());
-        LOGGER.info("start!");
+        LOGGER.info("start log:" + joinPoint.getSignature().getName());
         Object object = joinPoint.proceed();
-        System.out.println("end log:" + joinPoint.getSignature().getName());
-        LOGGER.info("end!");
+        LOGGER.info("end log:" + joinPoint.getSignature().getName());
         return object;
     }
 }

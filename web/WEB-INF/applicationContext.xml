@@ -12,11 +12,8 @@
      http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
     <context:component-scan base-package="SpringMVC.service" />
-    <context:component-scan base-package="SpringMVC.controller" />
     <context:component-scan base-package="SpringMVC.mapper" />
 
-    <!--自动代理aop-->
-    <aop:aspectj-autoproxy  />
 
     <util:properties id="db" location="classpath:db.properties"/>
 
@@ -59,10 +56,40 @@
         <property name="typeAliasesPackage" value="SpringMVC.entity" />
         <property name="dataSource" ref="dataSource"/>
         <property name="mapperLocations" value="classpath:mapper/*.xml"/>
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <!-- 这里的几个配置主要演示如何使用，如果不理解，一定要去掉下面的配置 -->
+                    <property name="properties">
+                        <value>
+                            helperDialect=mysql
+                            reasonable=true
+                            supportMethodsArguments=true
+                            params=count=countSql
+                            autoRuntimeDialect=true
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="SpringMVC.mapper"/>
     </bean>
+
+    <!--自动代理aop-->
+    <!--自动为spring容器中那些配置@aspect切面的bean创建代理，织入切面-->
+    <aop:aspectj-autoproxy  />
+
+    <!-- 配置事物管理类 -->
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <!-- 开启注解式事物扫描 -->
+    <tx:annotation-driven  />
+
 
 </beans>
