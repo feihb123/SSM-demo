@@ -7,33 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7e696b0-b32a-4784-a6c0-ad1d105ddf8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sql/db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringMVC/aspect/LoggerAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringMVC/controller/JsonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringMVC/controller/RestfulController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringMVC/exception/UserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringMVC/mapper/RestMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringMVC/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringMVC/service/RestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringMVC/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringMVC/service/impl/RestServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringMVC/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/page/rest.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringMVC/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringMVC/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringMVC/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringMVC/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/aspect/AspectExpression.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/aspect/AspectExpression.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/aspect/LoggerAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/aspect/LoggerAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/annotationApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/annotationApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SpringMVCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SpringMVCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/springMVCApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/springMVCApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringMVC/SpringMVC.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringMVC/SpringMVC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringMVC/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringMVC/controller/RegisterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/user_login_form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/user_register_form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/page/user_register_success.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -87,25 +69,13 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SpringMVC/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SpringMVC/SpringMVC.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="162">
-                <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="27">
+                <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -136,7 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/abc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/mybatis/mapper/HelloMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/mybatis/mapper/ChooseMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/mybatis/mapper/IfMapper.java" />
@@ -185,8 +154,9 @@
         <option value="$PROJECT_DIR$/src/main/java/SpringMVC/service/impl/RestServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/SpringMVC/mapper/RestMapper.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/SpringMVC/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/page/test.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/SpringMVC/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SpringMVC/SpringMVC.md" />
       </list>
     </option>
   </component>
@@ -237,11 +207,6 @@
             <path>
               <item name="SSM-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSM-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM-demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -249,6 +214,21 @@
               <item name="SSM-demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -550,7 +530,8 @@
       <workItem from="1560410496334" duration="8466000" />
       <workItem from="1560433979663" duration="2545000" />
       <workItem from="1560470795358" duration="10143000" />
-      <workItem from="1560492177448" duration="12978000" />
+      <workItem from="1560492177448" duration="13246000" />
+      <workItem from="1560580431846" duration="975000" />
     </task>
     <task id="LOCAL-00001" summary="complete">
       <created>1560183697684</created>
@@ -601,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560436532579</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update">
+      <created>1560505330467</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1560505330468</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -637,13 +625,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130717000" />
+    <option name="totallyTimeSpent" value="131960000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4957806" visible="true" weight="0.26876676" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4957806" visible="true" weight="0.27211797" />
       <window_info id="Designer" order="1" />
       <window_info id="Favorites" order="2" sideWeight="0.5030303" side_tool="true" weight="0.26675603" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -666,7 +654,7 @@
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5013405" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" weight="0.3286119" />
-      <window_info anchor="bottom" id="JRebel Executor" order="15" sideWeight="0.49865952" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="JRebel Executor" order="15" sideWeight="0.49865952" weight="0.3286119" />
       <window_info anchor="bottom" id="JRebel Console" order="16" sideWeight="0.5013405" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Tail" order="17" />
       <window_info anchor="bottom" id="Application Servers" order="18" show_stripe_button="false" weight="0.27903682" />
@@ -738,17 +726,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/MybatisTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/SpringMVC/entity/Platform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -880,16 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SpringMVC/controller/JsonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SpringMVC/mapper/IfMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -955,11 +922,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/error.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/SpringMVC/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1099,18 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="162">
-            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/rest.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1118,23 +1069,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/test.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/test.jsp" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="162">
+            <caret line="9" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SpringMVC/controller/JsonController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="221" column="28" selection-start-line="221" selection-start-column="28" selection-end-line="221" selection-end-column="28" />
+        <state relative-caret-position="475">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding>
-            <element signature="e#3700#3706#0#HTML" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SpringMVC/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SpringMVC/controller/RegisterController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/SpringMVC/controller/LoginController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/SpringMVC/SpringMVC.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="27">
+            <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
