@@ -4,6 +4,8 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace -> mapper接口所在位置-->
 <mapper namespace="mybatis.mapper.IfMapper">
+    <cache></cache>
+
     <select id="getUsers" resultType="User">
         select * from user where 1 = 1
 

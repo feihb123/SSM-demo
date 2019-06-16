@@ -1,6 +1,7 @@
 package mybatis.mapper;
 
 import mybatis.entity.User;
+import org.apache.ibatis.annotations.CacheNamespace;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

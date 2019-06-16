@@ -92,8 +92,6 @@ public class XmlHello {
         getUsersByChoose(session);
         getUsersByForeach(session);
 
-
-
         session.commit();
         session.close();
     }
