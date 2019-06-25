@@ -14,7 +14,7 @@
 
 ### [SpringMVC处理流程](./src/main/java/SpringMVC/SpringMVC.md)
 
-### [Mybatis介绍](./src/main/java/mybatis/mybatis.md)
+### [Mybatis介绍](./src/main/java/mybatis/Mybatis.md)
 
 
 
