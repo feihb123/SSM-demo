@@ -17,8 +17,8 @@
 　　(3). 如果指定了type，则从上下文中找到类型匹配的唯一bean进行装配，找不到或者找到多个，都会抛出异常
 　　(4). 如果既没有指定name，又没有指定type，则自动按照byName方式进行装配；如果没有匹配，则回退为一个原始类型进行匹配，如果匹配则自动装配
 3. **@Autowired和@Resource区别**
-    - 用于定义配置类，可替换xml配置文件，被注解的类内部包含有一个或多个被@Bean注解的方法，这些方法将会被AnnotationConfigApplicationContext或AnnotationConfigWebApplicationContext类进行扫描，并用于构建bean定义，初始化Spring容器。
-
+    - 都可以用于定义配置类，可替换xml配置文件，被注解的类内部包含有一个或多个被@Bean注解的方法，这些方法将会被AnnotationConfigApplicationContext或AnnotationConfigWebApplicationContext类进行扫描，并用于构建bean定义，初始化Spring容器。
+    - @Autowired默认按类型装配,@Resource默认按照名称进行装配。
 4. **@Configuration**
     - 如果容器中有一个以上匹配的Bean，则可以通过@Qualifier注解限定Bean的名称
     - 用法：直接在@Autowired下方@Qualifier("bean")
